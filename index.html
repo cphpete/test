@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year's Eve Cocktail Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Garamond, serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #1a1a1a;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+            border-bottom: 2px solid goldenrod;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: goldenrod;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            font-style: italic;
+            color: #ccc;
+        }
+
+        .cocktails {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .cocktail {
+            background: #2a2a2a;
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .cocktail:hover {
+            transform: translateY(-5px);
+        }
+
+        .cocktail-name {
+            font-size: 1.5rem;
+            color: goldenrod;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .cocktail-style {
+            font-size: 1rem;
+            color: #ccc;
+            font-style: italic;
+        }
+
+        .description {
+            margin: 1rem 0;
+            color: #eee;
+        }
+
+        .origin {
+            font-size: 0.9rem;
+            color: #bbb;
+            margin: 1rem 0;
+            font-style: italic;
+        }
+
+        .ingredients {
+            color: #ddd;
+            font-size: 0.9rem;
+        }
+
+        .extras-header {
+            text-align: center;
+            margin: 3rem 0 2rem;
+            color: goldenrod;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .cocktails {
+                grid-template-columns: 1fr;
+            }
+
+            .cocktail-name {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>New Year's Eve</h1>
+        <h2>Cocktail Selection</h2>
+    </header>
+
+    <div class="cocktails">
+        <div class="cocktail">
+            <div class="cocktail-name">
+                <span>Espresso Martini</span>
+                <span class="cocktail-style">Bold & Velvety</span>
+            </div>
+            <div class="description">A decadent cocktail combining the boldness of espresso with the smooth sweetness of coffee liqueur and vodka. Perfect for those who enjoy rich, layered flavors.</div>
+            <div class="origin">Origin: Invented in 1983 by bartender Dick Bradsell at the Soho Brasserie in London, England, originally called the Vodka Espresso.</div>
+            <div class="ingredients">Ingredients: Vodka, espresso, coffee liqueur, simple syrup.</div>
+        </div>
+
+        <div class="cocktail">
+            <div class="cocktail-name">
+                <span>Spicy Margarita</span>
+                <span class="cocktail-style">Zesty & Spicy</span>
+            </div>
+            <div class="description">A bright and bold cocktail that blends the tartness of lime with the warmth of jalapeño heat and a savory Tajin rim. Refreshing and invigorating.</div>
+            <div class="origin">Origin: Inspired by the original Margarita, invented in the late 1930s or early 1940s in Mexico, with a modern spicy twist that became popular in the early 2000s.</div>
+            <div class="ingredients">Ingredients: Tequila, fresh lime juice, orange liqueur, jalapeño slices, Tajin seasoning.</div>
+        </div>
+
+        <div class="cocktail">
+            <div class="cocktail-name">
+                <span>Hey Mambo</span>
+                <span class="cocktail-style">Tropical & Bittersweet</span>
+            </div>
+            <div class="description">A delightful riff on the Piña Colada, combining the tropical sweetness of pineapple and coconut with a bittersweet touch from Aperol. A hint of agave from tequila and mezcal adds depth without overpowering the palate.</div>
+            <div class="origin">Origin: Crafted by Mark Hibbard at Via Vecchia in Portland, Maine, this contemporary creation emerged during the Tiki cocktail resurgence of the late 2010s.</div>
+            <div class="ingredients">Ingredients: Aperol, mezcal, blanco tequila, pineapple juice, coconut cream, fresh lime juice.</div>
+        </div>
+
+        <div class="cocktail">
+            <div class="cocktail-name">
+                <span>Amaretto Sour</span>
+                <span class="cocktail-style">Sweet & Citrusy</span>
+            </div>
+            <div class="description">A smooth and nutty drink with the sweetness of amaretto and the bright, tangy finish of fresh lemon, elevated by a velvety texture.</div>
+            <div class="origin">Origin: Popularized in the 1970s, the modern version with bourbon has become a beloved variation worldwide.</div>
+            <div class="ingredients">Ingredients: Amaretto, bourbon, fresh lemon juice, simple syrup, egg white.</div>
+        </div>
+
+        <div class="cocktail">
+            <div class="cocktail-name">
+                <span>Whiskey Sour / Rum Sour</span>
+                <span class="cocktail-style">Rich & Balanced</span>
+            </div>
+            <div class="description">A timeless cocktail blending the smoothness of whiskey or rum with a touch of citrus and the warm spice of bitters.</div>
+            <div class="origin">Origin: With roots in the 1860s, this cocktail has stood the test of time, offering endless variations.</div>
+            <div class="ingredients">Ingredients: Whiskey or rum, lemon juice, simple syrup, egg white, Angostura bitters.</div>
+        </div>
+    </div>
+</body>
+</html>
